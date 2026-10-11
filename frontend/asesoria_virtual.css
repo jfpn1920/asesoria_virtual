@@ -1,11 +1,8 @@
-/*--|estilo_asesoria_virtual|--*/
-/* Configuración general de todos los elementos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* Estilos generales del documento */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: #f1f5f9;
@@ -13,7 +10,9 @@ body {
     min-height: 100vh;
     padding: 30px 16px;
 }
-/* Contenedor principal del formulario */
+/*-----------------------------*/
+/*--|estilo_asesoria_virtual|--*/
+/*-----------------------------*/
 .contenedor_asesoria_virtual {
     width: 100%;
     max-width: 600px;
@@ -23,12 +22,10 @@ body {
     border-radius: 18px;
     box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
 }
-/* Encabezado principal */
 .encabezado_asesoria_virtual {
     text-align: center;
     margin-bottom: 28px;
 }
-/* Icono decorativo del encabezado */
 .icono_asesoria_virtual {
     width: 60px;
     height: 60px;
@@ -42,35 +39,31 @@ body {
     font-size: 22px;
     font-weight: bold;
 }
-/* Título de la página */
 .encabezado_asesoria_virtual h1 {
     font-size: 28px;
     margin-bottom: 10px;
     color: #172554;
 }
-/* Texto descriptivo del encabezado */
 .encabezado_asesoria_virtual p {
     color: #64748b;
     font-size: 14px;
     line-height: 1.6;
 }
-/* Organización de los campos del formulario */
+/*----------------------------------------------*/
+/*--|estilo_formulario_de_solicitud_asesoríal|--*/
+/*----------------------------------------------*/
 .grupo_asesoria_virtual {
     display: flex;
     flex-direction: column;
     gap: 8px;
     margin-bottom: 19px;
 }
-/* Etiquetas de los campos */
 .grupo_asesoria_virtual label {
     font-size: 14px;
     font-weight: bold;
     color: #334155;
 }
-/* Estilos compartidos de los controles */
-.grupo_asesoria_virtual input,
-.grupo_asesoria_virtual select,
-.grupo_asesoria_virtual textarea {
+.grupo_asesoria_virtual input, .grupo_asesoria_virtual select, .grupo_asesoria_virtual textarea {
     width: 100%;
     padding: 12px 14px;
     border: 1px solid #cbd5e1;
@@ -82,38 +75,32 @@ body {
     outline: none;
     transition: border-color 0.2s, box-shadow 0.2s;
 }
-/* Altura mínima de los campos de entrada */
-.grupo_asesoria_virtual input,
-.grupo_asesoria_virtual select {
+.grupo_asesoria_virtual input, .grupo_asesoria_virtual select {
     min-height: 45px;
 }
-/* Permite escribir mensajes largos */
 .grupo_asesoria_virtual textarea {
     min-height: 110px;
     resize: vertical;
     line-height: 1.5;
 }
-/* Efecto visual al seleccionar un campo */
-.grupo_asesoria_virtual input:focus,
-.grupo_asesoria_virtual select:focus,
-.grupo_asesoria_virtual textarea:focus {
+.grupo_asesoria_virtual input:focus, .grupo_asesoria_virtual select:focus, .grupo_asesoria_virtual textarea:focus {
     border-color: #2563eb;
     box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
 }
-/* Aviso de almacenamiento local */
 .aviso_asesoria_virtual {
     margin: 4px 0 20px;
     color: #64748b;
     font-size: 12px;
     line-height: 1.5;
 }
-/* Organización de los botones */
+/*---------------------------------------------*/
+/*--|estilo_botones_de_accion_del_formulario|--*/
+/*---------------------------------------------*/
 .acciones_asesoria_virtual {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
-/* Estilos generales de los botones */
 .acciones_asesoria_virtual button {
     width: 100%;
     min-height: 46px;
@@ -124,29 +111,23 @@ body {
     cursor: pointer;
     transition: background 0.2s, transform 0.2s;
 }
-/* Botón principal para solicitar asesoría */
 #boton_solicitar_asesoria {
     background: #2563eb;
     color: #ffffff;
 }
-/* Efecto al pasar el cursor por el botón principal */
 #boton_solicitar_asesoria:hover {
     background: #1d4ed8;
 }
-/* Botón secundario para limpiar los campos */
 #boton_limpiar_asesoria {
     background: #e2e8f0;
     color: #334155;
 }
-/* Efecto al pasar el cursor por el botón secundario */
 #boton_limpiar_asesoria:hover {
     background: #cbd5e1;
 }
-/* Efecto al presionar cualquier botón */
 .acciones_asesoria_virtual button:active {
     transform: scale(0.98);
 }
-/* Mensajes de confirmación o advertencia */
 .mensaje_asesoria_virtual {
     margin-top: 18px;
     font-size: 14px;
@@ -154,11 +135,9 @@ body {
     line-height: 1.6;
     overflow-wrap: anywhere;
 }
-/* Color para los mensajes satisfactorios */
 .mensaje_asesoria_virtual.exito {
     color: #15803d;
 }
-/* Color para los mensajes de advertencia */
 .mensaje_asesoria_virtual.error {
     color: #b91c1c;
 }
